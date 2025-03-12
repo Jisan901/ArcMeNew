@@ -1,0 +1,79 @@
+*{
+    cursor: none;
+}
+body:has(.hover-pointer-scale:hover) .pointer-mx {
+    scale: 200%;
+   
+}
+
+
+.text-container-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.text-container .text,
+.text-container-center .text{
+    display: block;
+    overflow: hidden;
+}
+.text-container .text span,
+.text-container-center .text span{
+    display: block;
+    opacity: 0;
+    animation-name: show, back2;
+    animation-duration: 0.75s, 10s;
+    animation-iteration-count: 1, infinite; 
+    animation-timing-function: linear, linear;
+    animation-fill-mode: forwards, none;
+    animation-delay: 0.4s, 0s;
+    
+}
+
+.tilt-block p{
+    animation: show 0.75s 0.4s forwards;
+    opacity: 0;
+    display: block;
+}
+
+.pointer-mx {
+    pointer-events: none;
+    transition: scale 0.1s;
+}
+
+
+.textbg{
+    background-clip: text;
+    color: transparent;
+    background-image: url('/src/assets/textbg.jpg');
+    background-size: 120%;
+    filter: grayscale(100%);
+}
+
+
+
+@keyframes back2 {
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+
+
+@keyframes show{
+    0%{
+        opacity: 1;
+        transform: translate3d(0,120%,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0);
+    }
+}
