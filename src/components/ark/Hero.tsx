@@ -7,6 +7,11 @@ import { About } from "./About";
 import { Services } from "./Services";
 import { ServicesCards } from "./ServicesCards";
 export const Hero = () => {
+
+  const url_for = (url:string)=> new URL(url, import.meta.url).href
+  
+
+
   const lerp = (a: number, b: number, t: number): number => a + (b - a) * t;
   const blks = document.getElementsByClassName('tilt-block') as HTMLCollectionOf<HTMLDivElement>;
 
@@ -88,22 +93,22 @@ export const Hero = () => {
       <Pointer x={mousePos.x} y={mousePos.y}/>
       <Block width="100%" height="100vh" color="var(--dark-color)" className="relative overflow-hidden">
         <div data-layer="1" className="h-48 w-48 absolute top-5 left-1/2 tilt-block">
-          <img src="/src/assets/card1.png" className="h-full w-full" />
+          <img src={url_for("/src/assets/card1.png")} className="h-full w-full" />
         </div>
         <div data-layer="1" className="h-48 w-48 absolute bottom-24 right-24 tilt-block">
-          <img src="/src/assets/card2.png" className="h-full w-full" />
+          <img src={url_for("/src/assets/card2.png")} className="h-full w-full" />
         </div>
         <div data-layer="1" className="h-32 w-32 absolute bottom-24 left-24 tilt-block">
-          <img src="/src/assets/card3.png" className="h-full w-full" />
+          <img src={url_for("/src/assets/card3.png")} className="h-full w-full" />
         </div>
         <div data-layer="4" className="h-48 w-48 absolute top-24 left-24 tilt-block">
-          <img src="/src/assets/card4.jpg" className="h-full w-full" />
+          <img src={url_for("/src/assets/card4.jpg")} className="h-full w-full" />
         </div>
         <div data-layer="4" className="h-40 w-48 absolute top-24 right-24 tilt-block">
-          <img src="/src/assets/card5.jpg" className="h-full w-full" />
+          <img src={url_for("/src/assets/card5.jpg")} className="h-full w-full" />
         </div>
         <div data-layer="4" className="h-48 w-48 absolute bottom-2.5 left-[40%] tilt-block">
-          <img src="/src/assets/card6.jpg" className="h-full w-full" />
+          <img src={url_for("/src/assets/card6.jpg")} className="h-full w-full" />
         </div>
         <div className="text-container-center ">
           <div className="text">

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import img1 from '/src/assets/card2.png'
+
 
 export const About = () => {
   const [openSection, setOpenSection] = useState<string|null>(null);
@@ -11,7 +13,7 @@ export const About = () => {
     <div className="relative overflow-hidden grid place-items-center w-full h-screen bg-[var(--dark-color)] text-white p-12">
       <div className="w-full max-w-6xl flex items-center gap-12">
         <div className="w-1/2">
-          <img src="/src/assets/card2.png" alt="banner" className="w-full h-auto grayscale" />
+          <img src={img1} alt="banner" className="w-full h-auto grayscale" />
         </div>
         <div className="w-1/2 space-y-6">
           <span className="text-gray-400 text-lg tracking-wide">Mehr als nur eine Marketing Agentur.</span>
