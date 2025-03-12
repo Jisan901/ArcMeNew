@@ -2,10 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { Block } from "../temp/Block";
 import "./Hero.css";
 import { Pointer } from "./Pointer";
-import { Vision } from "./Vision";
-import { About } from "./About";
-import { Services } from "./Services";
-import { ServicesCards } from "./ServicesCards";
 
 import card1 from "/src/assets/card1.png";
 import card2 from "/src/assets/card2.png";
@@ -120,12 +116,6 @@ export const Hero = () => {
           </div>
         </div>
       </Block>
-      <Vision/>
-      <About/>
-      <ServicesCards/>
-      <Services/>
-
-      <Block width="100%" height="300vh" color="var(--dark-color)" className="relative"></Block>
     </div>
   );
 };
