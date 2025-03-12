@@ -7,12 +7,12 @@ import { About } from "./About";
 import { Services } from "./Services";
 import { ServicesCards } from "./ServicesCards";
 
-import card1 from "@/assets/card1.png";
-import card2 from "@/assets/card2.png";
-import card3 from "@/assets/card3.png";
-import card4 from "@/assets/card4.jpg";
-import card5 from "@/assets/card5.jpg";
-import card6 from "@/assets/card6.jpg";
+import card1 from "/src/assets/card1.png";
+import card2 from "/src/assets/card2.png";
+import card3 from "/src/assets/card3.png";
+import card4 from "/src/assets/card4.jpg";
+import card5 from "/src/assets/card5.jpg";
+import card6 from "/src/assets/card6.jpg";
 
 
 export const Hero = () => {
